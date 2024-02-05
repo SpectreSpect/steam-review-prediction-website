@@ -31,9 +31,6 @@ code {
 }
 
 .github-logo {
-  width: 60px;
-  height: 60px;
-  background-color: white;
 }
 
 .header-text {
@@ -82,7 +79,7 @@ code {
   outline: none;
 }
 
-.predict-button {
+/* .predict-button {
   width: 250px;
   height: 60px;
   background-color: #1F8DFF;
@@ -97,6 +94,29 @@ code {
 
 .predict-button:hover {
   background-color: #2F3239;
+}
+
+.predict-button:active {
+  background-color: #202226;
+} */
+
+
+
+.predict-button {
+  width: 250px;
+  height: 60px;
+  background-color: #1F8DFF;
+  border: none;
+  border-radius: 5px;
+  font-size: 30px;
+  color: white;
+  margin-top: 30px;
+  box-shadow: -1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.1s ease-out;
+}
+
+.predict-button:hover {
+  background-color: #1b70cc;
 }
 
 .predict-button:active {

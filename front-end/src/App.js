@@ -8,7 +8,7 @@ function App() {
         <div className="header-content">
           {/* <div className="github-logo">
           </div> */}
-          <a href="https://github.com/SpectreSpect/steam-review-vote-prediction" className="github-logg">
+          <a href="https://github.com/SpectreSpect/steam-reviews-prediction-website" className="github-logo">
             <GithubLogo width="60" height="60" viewBox="0 0 100 100"
                     fill="none"/>
           </a>
