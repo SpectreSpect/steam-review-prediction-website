@@ -101,7 +101,6 @@ code {
 } */
 
 
-
 .predict-button {
   width: 250px;
   height: 60px;
@@ -121,4 +120,16 @@ code {
 
 .predict-button:active {
   background-color: #202226;
+}
+
+.prediction-result--none {
+  color: white;
+}
+
+.prediction-result--positive {
+  color: #1a9fff;
+}
+
+.prediction-result--negative {
+  color: #e06363;
 }
