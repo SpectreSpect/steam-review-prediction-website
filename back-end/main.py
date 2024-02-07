@@ -23,7 +23,7 @@ def predict():
     
     result = 'none'
     try:
-        response = requests.post("http://localhost:8605/v1/models/steam_reviews_prediction:predict", data=data_to_post)
+        response = requests.post("http://model:8605/v1/models/steam_reviews_prediction:predict", data=data_to_post)
         predictions = response.json()['predictions'][0]
         result = 'negative'
         if predictions[1] >= 0.5:
