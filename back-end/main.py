@@ -19,14 +19,14 @@ def predict():
     text = data['text']
 
     sequences = tokenizer.texts_to_sequences([text])
-    data_to_post = {'instances': sequences}
+    data_to_post = json.dumps({'instances': sequences})
     
     result = 'none'
     try:
         response = requests.post("http://localhost:8605/v1/models/steam_reviews_prediction:predict", data=data_to_post)
         predictions = response.json()['predictions'][0]
         result = 'negative'
-        if predictions[0] >= 0.5:
+        if predictions[1] >= 0.5:
             result = 'positive'     
     except requests.exceptions.RequestException as e:
         red_color = "\033[31m"
